@@ -1,0 +1,66 @@
+.navbar-custom {
+    display: flex;
+    flex-wrap: wrap; /* 允许整体换行 */
+    justify-content: space-between; /* 关键：两端对齐 */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+/* Logo 容器 */
+.logo-custom {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    flex-shrink: 0; /* 禁止压缩 */
+    order: 1; /* 控制顺序 */
+}
+
+.logo-custom span {
+    font-size: 2em;
+    font-weight: bold;
+    color: #222;
+}
+
+.logo-custom img {
+    height: 4em;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* 标题 */
+.nav-h2-custom {
+    flex: 0 1 auto; /* 允许压缩 */
+    text-align: center;
+    min-width: min-content; /* 关键：最小宽度为内容宽度 */
+    order: 2;
+}
+
+/* 语言切换器 */
+.language-switcher-container-custom {
+    margin-right: 2em;
+    flex-shrink: 0;
+    order: 3;
+}
+
+@media (max-width: 768px) { /* 调整断点 */
+    .navbar-custom header {
+        justify-content: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .logo-custom,
+    .language-switcher-container-custom {
+        margin: 0; /* 移除外边距 */
+    }
+
+    .nav-h2-custom {
+        order: 3; /* 标题最后换行 */
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 0;
+    }
+}

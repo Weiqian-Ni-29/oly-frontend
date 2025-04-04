@@ -1,0 +1,104 @@
+/* top nav bar */
+header {
+    display: flex;
+    justify-content: center; /* 水平居中对齐整个导航栏 */
+    align-items: center; /* 垂直居中对齐内容 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%; /* 占据整个页面宽度 */
+    z-index: 1000;
+    height: auto;
+    flex-wrap: wrap; /* 支持换行 */
+}
+
+/* Logo 样式 */
+.logo {
+    position: absolute;
+    left: 1em;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 4em;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 2em;
+    font-weight: bold;
+    color: #222;
+}
+
+/* 导航栏样式 */
+nav {
+    display: flex;
+    justify-content: center; /* 水平居中内容 */
+    gap: 4em; /* 每个导航链接之间的间距 */
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.nav-h2 {
+    margin: 0 auto; /* 自动外边距使其在可用空间居中 */
+    text-align: center;
+    flex-shrink: 0; /* 防止标题被压缩 */
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column; /* 将布局方向改为垂直方向 */
+        align-items: center; /* 垂直居中 */
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        position: static; /* 不再绝对定位 */
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 3em;
+    }
+
+    .logo span {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav {
+        gap: 2em;
+    }
+
+    nav a {
+        font-size: 1.1em;
+    }
+}
+
+/* 新增语言切换器容器样式 */
+.language-switcher-container {
+    position: absolute;
+    right: 1em;
+    transform: translateY(90%); 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 2em;
+}
