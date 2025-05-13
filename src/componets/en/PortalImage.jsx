@@ -30,7 +30,7 @@ function PortalImg() {
                             autoPlayDelay={5.0}
                         />
             <div className="text-overlay">
-                <h2>OLY, your reliable partner in screen film printing</h2>
+                <h2>screen film printing, find your best partner at OLY</h2>
                 <p>Driven by productivity, responsiveness, and uncompromising quality assurance</p>
             </div>
         </div>
