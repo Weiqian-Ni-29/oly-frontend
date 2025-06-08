@@ -1,13 +1,13 @@
 import NavBar from "../../componets/en/NavBar";
 import "../styles/AboutUs.css";
-import banner from '../../assets/imgs/common/banner-aboutus.jpg';
 import Footer from "../../componets/en/Footer";
+import VideoPlayer from "../../componets/en/VideoPlayer";
 function AboutUs() {
   return (
     <section id="aboutus" className="about-us">
       <div>
         <NavBar title='About US'/>
-        <img className="aboutus-img" src={banner} alt="banner"/>
+        <VideoPlayer url="https://www.youtube.com/embed/F_lbht0R2eg?si=nFxZAwF3I5EWFmih"/>
         <div style={{backgroundColor:'bisque'}}>
           <div className="aboutus-intro">
             <h3>

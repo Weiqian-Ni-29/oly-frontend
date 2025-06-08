@@ -38,6 +38,7 @@ nav {
     display: flex;
     justify-content: center; /* 水平居中内容 */
     gap: 4em; /* 每个导航链接之间的间距 */
+    margin: 20px 0;
 }
 
 nav a {
@@ -96,7 +97,7 @@ nav a:hover {
 .language-switcher-container {
     position: absolute;
     right: 1em;
-    transform: translateY(90%); 
+    transform: translateY(15%); 
     display: flex;
     align-items: center;
     align-content: center;
